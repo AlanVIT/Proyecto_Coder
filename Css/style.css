@@ -64,6 +64,7 @@ li a{
 li a:hover{
     background-color: rgb(41, 41, 41);
     border-radius: 10px;
+    color: #fff;
 }
 
 
@@ -120,6 +121,7 @@ footer{
     align-items:center;
     list-style:none;
     justify-content: center;
+
 }
 
 footer h3{
@@ -264,5 +266,9 @@ body{
 .container img{
 
     width: 200px;
+
+}
+#parrafoPrd{
+    margin-left: 120px;
 
 }
