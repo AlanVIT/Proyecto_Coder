@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 
+#head{
+margin-top: 15px;
+
+}
+
 body{
     /* background-image: url(fondo.jpg);
     background-repeat:no-repeat ; */
@@ -85,6 +90,7 @@ form input:focus{
     transition: 1s;
     cursor: text;
 }
+
 
 #saver:hover{
     background-color: #e6e4e4;
