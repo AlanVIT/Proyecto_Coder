@@ -1,14 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 
+#tYS{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
 #head{
-    margin-top: 15px;
+    background: rgb(227, 227, 227);
+    padding: 10px;
+    margin-top: 0.3cm;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    border-radius: 20px;
 }
 
-#fondoIndx{
-    background-image:i;
+
+#body{
+    margin-top: 2rem;
 
 }
 
+#welcome{
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+
+#discurso{
+    display: flex;
+    justify-content: center;
+}
+
+#infoIndx{
+    position: absolute;
+    left:25%;
+    top:86% ;
+    background-color:rgb(255, 250, 243);
+    width: 20rem;
+}
 
 /* body{
     /* background-image: url(fondo.jpg);
@@ -26,8 +60,9 @@ footer{
 }   
 
 #mrc{
-margin-left: 45%;
-margin-bottom: 2rem;
+    /* margin-left: 45%; */
+    /* margin-bottom: 2rem; */
+    font-size: -webkit-xxx-large;
 
 }
 
@@ -62,6 +97,7 @@ ul{
     flex-direction: row;
     justify-content: space-around;
     list-style:none;
+
 }
 li a{
     background-color: black;
@@ -170,7 +206,6 @@ footer a{
 }
 
 
-
 #asunto{
     padding-right: 90px;
 }
@@ -212,10 +247,17 @@ footer a{
     color: #000000;
 
 }
+#cards{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
 
+}
 body{
     display: grid;
-    grid-template-rows:2cm 2cm 20cm 2cm; 
+    grid-template-rows:3cm 1.4cm 25cm 2cm; 
+    /* grid-template-rows:0.09fr 1.4cm 0.8fr 0.063fr; */
 
 }
 
@@ -225,7 +267,7 @@ body{
     grid-template-columns:1fr 1fr;
 
 }
-.textos img{
+/* .textos img{
     justify-self: center;
     animation-name: unEfecto;
     animation-iteration-count:infinite ;
@@ -233,7 +275,7 @@ body{
     animation-duration: 3s;
     animation-delay:3s;
 
-}
+} */
 .h3{
     margin: 0;
     margin-right:10px ;
@@ -244,30 +286,13 @@ body{
     100%{}
 }
 
-@media screen and (max-width:361px){
-    .textos{
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    body{
-        display: grid;
-        grid-template-rows:1fr 10fr 1fr; 
 
-    }
-    ul li a{
-        padding: 2px;
-        font-size:xx-small;
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        list-style:none;
-    } 
-    img{
-        height: 100px;
-    }
+.Ws{
+    height: 60px;
+}
 
-
-
+.Ig{
+    height: 40px;
 }
 
 #indImg{
@@ -289,4 +314,73 @@ body{
 #form{
     border: #000;
 
+}
+
+@media screen and (max-width:361px){
+
+    #carouselExampleIndicators{
+        width: 50px;
+        margin-right: 60%;
+    }
+    #head{
+        background: rgb(227, 227, 227);
+        padding: 5px;
+        margin-left: 2cm;
+        margin-right: 2cm;
+        border-radius: 20px;
+    }
+    #tYS h3{
+        font-size: medium;
+
+    }
+    #mrc{
+        font-size: large;
+    }
+    .textos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    body{
+        display: grid;
+        grid-template-rows:1.6cm 1cm 20cm 1.5cm; 
+
+    }
+    ul li a{
+        padding: 2px;
+        font-size:xx-small;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        list-style:none;
+    } 
+    .Ws{
+        height: 30px;
+    }
+    #carouselExampleIndicators img{
+        width: 100px;
+
+    }
+    .Ig{
+        height: 30px;
+    }
+    #fotoOn{
+        height: 250px;
+
+    }
+    #infoIndx p{
+        font-size: small;
+    }
+    #infoIndx{
+        /* height: 100px; */
+        width: 250px;
+        top: 40%;
+        left:10%;
+    }
+    #infoIndx h2{
+        font-size: medium;
+    }
+    #discurso{
+        margin-top:5cm ;
+
+    }
 }
