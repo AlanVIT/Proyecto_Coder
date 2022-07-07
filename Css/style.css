@@ -256,7 +256,7 @@ footer a{
 }
 body{
     display: grid;
-    grid-template-rows:3cm 1.4cm 25cm 2cm; 
+    grid-template-rows:3cm 1.4cm 30cm 2cm; 
     /* grid-template-rows:0.09fr 1.4cm 0.8fr 0.063fr; */
 
 }
