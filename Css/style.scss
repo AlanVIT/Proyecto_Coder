@@ -8,15 +8,22 @@
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-evenly;
-    background-image:url(assets\FotoFondo.webp);
+    // background-image:url(internet-g658ac3c87_1920.jpg);
+
+    // img{
+    //     position: absolute;
+    //     width: 12cm;
+    //     height: 1cm;
+
+    // }
 }
 
 
-
 #head{
-    background: rgb(227, 227, 227);
+    
+    background:#eee8d8;
     padding: 10px;
-    margin-top: 0.3cm;
+    // margin-top: 0.3cm;
     margin-left: 5cm;
     margin-right: 5cm;
     border-radius: 20px;
@@ -102,19 +109,21 @@ ul{
 
 }
 li a{
-    background-color: black;
+    // background-color: black;
     padding: 10px;
     border-radius:20px;
-    color: $blanco;
+    color: rgb(95, 95, 95);
     text-decoration: none;  
     transition: 1s;    
 }
 
 li a:hover{
-    background-color: rgb(41, 41, 41);
+    color: rgb(0, 0, 0);
     border-radius: 10px;
-    color: #fff;
+    
 }
+
+
 
 
  form input{
@@ -164,14 +173,15 @@ form input:focus{
 
 
 footer{
-    background-color:#f5f5f5;
+    background-color:#f7f5ee;
     display: flex;
-    flex-direction: row;
-    align-items:center;
-    list-style:none;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
     justify-content: center;
-
 }
+
+
 
 footer h3{
     margin-right: 30px;
@@ -258,7 +268,10 @@ footer a{
 }
 body{
     display: grid;
-    grid-template-rows:3cm 1.4cm 30cm 2cm; 
+    grid-template-rows:5cm 1.1cm 30cm 2cm; 
+    // grid-template-columns:1fr 1fr 1fr 1fr;
+    // grid-template-areas: "tYS head body footer";
+    background-color: #f7f5ee !important;
     /* grid-template-rows:0.09fr 1.4cm 0.8fr 0.063fr; */
 
 }
@@ -325,7 +338,7 @@ body{
         margin-right: 60%;
     }
     #head{
-        background: rgb(227, 227, 227);
+        background: #eee8d8;
         padding: 5px;
         margin-left: 2cm;
         margin-right: 2cm;
