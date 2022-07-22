@@ -8,6 +8,10 @@
   justify-content: space-evenly;
 }
 
+.NavHm {
+  display: none;
+}
+
 #head {
   background: #eee8d8;
   padding: 10px;
@@ -32,20 +36,12 @@
 
 #infoIndx {
   position: absolute;
-  left: 25%;
-  top: 86%;
+  left: 30%;
+  top: 24cm;
   background-color: rgb(255, 250, 243);
   width: 20rem;
 }
 
-/* body{
-    /* background-image: url(fondo.jpg);
-    background-repeat:no-repeat ; */
-/* background-color: #f7f5ee;  */
-/* grid-template-areas: "" "" "" ""; */
-/* background: linear-gradient(rgba(0, 0, 0, 0.7)20%, rgba(0, 0, 0, 0) );  */
-/* DEGRADE*/
-/* }  */
 footer {
   /* padding-right: 100%; */
   margin-top: 10px;
@@ -57,31 +53,6 @@ footer {
   font-size: -webkit-xxx-large;
 }
 
-/* ul {
-    list-style: none;
-    font-size: 0;
-    truco por el uso de inline-block
-}
-
-li {
-    display: inline-block;
-    width: 16.6%;
-    position: relative;
-    font-size: 14px
-}
-
-ul ul {
-    position: absolute;
-    display: none;
-}
-
-ul ul li {
-    display: block;
-}
-
-ul li:hover ul {
-    display: block;
-} */
 ul {
   display: flex;
   flex-direction: row;
@@ -168,6 +139,7 @@ footer a {
   flex-direction: row;
   align-items: center;
   list-style: none;
+  justify-content: space-evenly;
   /* display: grid;
   grid-template-columns:20% 20% 20% 20% 20%; */
 }
@@ -178,6 +150,14 @@ footer a {
   align-items: center;
   list-style: none;
   justify-content: space-evenly;
+}
+
+button.carousel-control-next {
+  left: 280px;
+}
+
+.car img {
+  width: 10px;
 }
 
 .textos {
@@ -232,20 +212,10 @@ footer a {
 
 body {
   display: grid;
-  grid-template-rows: 5cm 1.1cm 30cm 2cm;
   background-color: #f7f5ee !important;
   /* grid-template-rows:0.09fr 1.4cm 0.8fr 0.063fr; */
 }
 
-/* .textos img{
-    justify-self: center;
-    animation-name: unEfecto;
-    animation-iteration-count:infinite ;
-    animation-timing-function: ease-in;
-    animation-duration: 3s;
-    animation-delay:3s;
-
-} */
 .h3 {
   margin: 0;
   margin-right: 10px;
@@ -260,6 +230,14 @@ body {
 
 .Ig {
   height: 40px;
+}
+
+#fotoOn {
+  width: 400px;
+}
+
+#welcome img {
+  width: 400px;
 }
 
 #indImg {
@@ -280,16 +258,11 @@ body {
 }
 
 @media screen and (max-width: 361px) {
-  #carouselExampleIndicators {
-    width: 50px;
-    margin-right: 60%;
+  .NavHm {
+    display: block;
   }
   #head {
-    background: #eee8d8;
-    padding: 5px;
-    margin-left: 2cm;
-    margin-right: 2cm;
-    border-radius: 20px;
+    display: none;
   }
   #tYS h3 {
     font-size: medium;
@@ -304,6 +277,7 @@ body {
   body {
     display: grid;
     grid-template-rows: 1.6cm 1cm 20cm 1.5cm;
+    grid-template-areas: "NavHm" "tYS";
   }
   ul li a {
     padding: 2px;
@@ -312,6 +286,9 @@ body {
     flex-direction: row;
     margin: 0;
     list-style: none;
+  }
+  #welcome img {
+    width: 140px;
   }
   .Ws {
     height: 30px;
@@ -323,22 +300,25 @@ body {
     height: 30px;
   }
   #fotoOn {
-    height: 250px;
+    width: 220px;
   }
   #infoIndx p {
-    font-size: small;
+    font-size: xx-small;
   }
   #infoIndx {
     /* height: 100px; */
-    width: 250px;
-    top: 40%;
+    width: 190px;
+    top: 419px;
     left: 10%;
   }
   #infoIndx h2 {
     font-size: medium;
   }
   #discurso {
-    margin-top: 5cm;
+    margin-top: 1cm;
+  }
+  button.carousel-control-next {
+    left: 109px;
   }
   .container img {
     width: 100px;
