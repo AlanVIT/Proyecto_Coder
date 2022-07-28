@@ -25,7 +25,7 @@
 }
 
 #welcome {
-  margin-left: 40%;
+  margin-left: 35%;
   margin-bottom: 5%;
 }
 
@@ -37,8 +37,8 @@
 #infoIndx {
   position: absolute;
   left: 30%;
-  top: 24cm;
-  background-color: rgb(255, 250, 243);
+  top: 19cm;
+  background-color: rgba(255, 250, 243, 0.7);
   width: 20rem;
 }
 
@@ -123,7 +123,6 @@ footer {
   flex-direction: column;
   align-items: center;
   list-style: none;
-  justify-content: center;
 }
 
 footer h3 {
@@ -154,10 +153,6 @@ footer a {
 
 button.carousel-control-next {
   left: 280px;
-}
-
-.car img {
-  width: 10px;
 }
 
 .textos {
@@ -213,7 +208,7 @@ button.carousel-control-next {
 body {
   display: grid;
   background-color: #f7f5ee !important;
-  /* grid-template-rows:0.09fr 1.4cm 0.8fr 0.063fr; */
+  grid-template-rows: 0.09fr 1.4cm 30cm 0.063fr;
 }
 
 .h3 {
@@ -238,6 +233,7 @@ body {
 
 #welcome img {
   width: 400px;
+  height: 460px;
 }
 
 #indImg {
@@ -257,7 +253,33 @@ body {
   border: #000;
 }
 
-@media screen and (max-width: 361px) {
+.paleta {
+  margin-left: 20%;
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    display: grid;
+    grid-template-rows: 100px 0cm 18cm 0;
+  }
+  .bodyPg {
+    grid-template-rows: 100px 0cm 1200px 250px;
+  }
+  .bodyCt {
+    grid-template-rows: 100px 0cm 580px 125px;
+  }
+  .bodyPr {
+    grid-template-rows: 100px 0cm 105% 0cm;
+  }
+  h3 {
+    font-size: small !important;
+  }
+  h2 {
+    font-size: medium !important;
+  }
+  h1 {
+    font-size: larger !important;
+  }
   .NavHm {
     display: block;
   }
@@ -267,6 +289,11 @@ body {
   #tYS h3 {
     font-size: medium;
   }
+  #tYS {
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
   #mrc {
     font-size: large;
   }
@@ -274,10 +301,19 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  body {
-    display: grid;
-    grid-template-rows: 1.6cm 1cm 20cm 1.5cm;
-    grid-template-areas: "NavHm" "tYS";
+  #contForm {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #form {
+    margin-bottom: 40px;
+  }
+  #nos {
+    margin-left: 125px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
   }
   ul li a {
     padding: 2px;
@@ -287,8 +323,13 @@ body {
     margin: 0;
     list-style: none;
   }
+  #welcome {
+    margin-left: 75px;
+    margin-top: 28px;
+  }
   #welcome img {
-    width: 140px;
+    width: 220px;
+    height: 250px;
   }
   .Ws {
     height: 30px;
@@ -308,19 +349,26 @@ body {
   #infoIndx {
     /* height: 100px; */
     width: 190px;
-    top: 419px;
+    top: 484px;
     left: 10%;
   }
   #infoIndx h2 {
     font-size: medium;
   }
   #discurso {
-    margin-top: 1cm;
+    margin-top: 2cm;
   }
   button.carousel-control-next {
     left: 109px;
   }
   .container img {
     width: 100px;
+  }
+  #parrafoPrd {
+    margin-left: 0;
+  }
+  .paleta {
+    width: 320px;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
