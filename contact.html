@@ -11,7 +11,7 @@
 <body class="bodyCt">
         <div id="tYS">
         <h1 id="mrc">DENVER</h1>
-        <h3>Slogan que despues les pregunto</h3>
+        <h3>Tu buzo tu diseño</h3>
         </div>
         <!-- Hamburg -->
 <div class="NavHm">
@@ -66,36 +66,37 @@
         </ul>
         </div>
 <div id="body">
-       <div id="contForm">
-        <div id="form">
+
+
+
+  <div id="contForm">
+    <div class="nosotros">
+      <h2 >Nosotros</h2>
+      <br class="br">
+      <h3 class="mlytel">DenverBuzos@gmail.com</h3>
+      <br class="br">
+      <h3 class="mlytel" >+54 0000-0000</h3>
+    </div>
+      <div id="form">
         <form>
             <br>
-            <input  type="text" name="name" placeholder="Nombre" class="completar">
-            <input  type="email" name="name" placeholder="Email" class="completar">
+            <input id="nombre" type="text" name="name" minlength="3" placeholder="Nombre" class="completarI" required>
             <br>
-            <input type="text" placeholder="Asunto" id="asunto" class="completar">
+            <input id="direccion" type="text" name="name" placeholder="Dirección" class="completarI" required>
             <br>
-            <textarea id="" cols="30" class="completar" placeholder="Escriba su mensaje"></textarea>
+            <input  id="mail" type="email" name="name" minlength="11" placeholder="Email" class="completarI" required>
+            <input id="tel" type="number" minlength="8" placeholder="Telefono" class="completarI" required>
             <br>
-            <input type="submit" class="btn btn-primary"></input>
+            <textarea id="msg" cols="48" placeholder="Escriba su mensaje" class="completar" required ></textarea>
+            <br>
+            <input id="guardar" type="submit" placeholder="Enviar" onclick="guardar()" class="btn btn-primary"></input>
         </form>
+      </div>
     </div>
-        <form action="" method="">
-            <br>
-            <h2 id="nos">Nosotros</h2>
-            <br>
-            <div>
-                <label class="info">Email</label>
-                <label class="mlytel" for="">DenverBuzos@gmail.com</label>
-            </div>
-            <div>
-                <label class="info">Numero</label>
-                <label class="mlytel" for="">+54 0000-0000</label>
-            </div>    
-            <br>
-        </form>
-    </div>
-</div>
+    <img class="imgct" src="assets/contacto.webp">
+
+
+</div> 
 <footer class="footer">
     <h3>Redes:</h3>
     <span>
@@ -107,7 +108,7 @@
 
 </footer>  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
+<script src="contacto.js"></script>
 </body>
 </html>
 

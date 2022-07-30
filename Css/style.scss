@@ -40,7 +40,7 @@
 }
 
 #welcome{
-    margin-left: 35%;
+    margin-left: 720px;
     margin-bottom: 5%;
 }
 
@@ -96,17 +96,6 @@ li a:hover{
     
 }
 
-
-
-
-form input{
-    border:1px;
-    background-color:rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 10px;
-    transition: 1s;
-} 
-
 form input:hover{
     background-color:rgb(218, 218, 218);
 }
@@ -116,14 +105,19 @@ form input:focus{
     padding: 100px;
 } */
 .completar{
-    border: none;
-    background-color:rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
     padding: 10px;
     transition: 1s;
     cursor: text;
+    margin-bottom: 10px;
 }
-
-
+.completarI{
+    @extend .completar;
+    padding-right: 200px;
+}
+#tel, #mail{
+    padding-right: 0;
+}
 #saver:hover{
     background-color: #e6e4e4;
     border: #000;
@@ -206,8 +200,9 @@ button.carousel-control-next{
 
 #contForm{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: row;
 }
 
 .info{
@@ -238,9 +233,10 @@ button.carousel-control-next{
 }
 #cards{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     justify-content: space-evenly;
+    align-items: center;
 
 }
 body{
@@ -266,8 +262,14 @@ body{
     25%{}
     100%{}
 }
+.imgct{
+    margin-left: 560px;
+    margin-top: 20px;
+}
 
-
+.prg{
+    width: 360px;    
+}
 .Ws{
     height: 60px;
 }
@@ -282,7 +284,7 @@ body{
 #welcome{
     img{
         width: 400px;
-        height: 460px;
+        // height: 460px;
 }}
 #indImg{
     width: 10px;
@@ -296,30 +298,58 @@ body{
 
 }
 #parrafoPrd{
-    margin-left: 120px;
-
+    margin-left: 400px;
 }
 
-#form{
-    border: #000;
-
-}
 .paleta{
-    margin-left: 20%;
+
+    margin-left: 770px;
+    width: 330px;
+}
+#msg{
+    width: 395px;
+    height: 90px;
+    resize:none
+}
+#guardar{
+    position: absolute;
+    right: 593px;
+    top: 455px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#carta{
+    width: 27rem;
+}
+#carta2{
+    margin-top: 20px;
+    width: 27rem;
 }
 
 @media screen and (max-width:430px){
+    .bodyInd{
+        display: grid;
+        grid-template-rows: 100px 0cm 18cm 135px; 
+    }
     body{
         display: grid;
-        grid-template-rows: 100px 0cm 18cm 0;
+        grid-template-rows: 100px 0cm 14.5cm 92px;
+    }
+    #carta{
+        width: 15rem;
+    }
+    #carta2{
 
+        width: 15rem;
     }
     .bodyPg{
 
-        grid-template-rows:100px 0cm 1200px 250px;
+        grid-template-rows:100px 0cm 400px 250px;
     }
     .bodyCt{
-        grid-template-rows:100px 0cm 580px 125px;
+        grid-template-rows: 100px 0cm 660px 125px;
 
     }
     .bodyPr{
@@ -330,10 +360,10 @@ body{
         font-size: small !important;
     }
     h2{
-        font-size: medium !important;
+        font-size: larger !important;
     }
     h1{
-        font-size: larger !important;
+        font-size: x-large !important;
     }
     // #carouselExampleIndicators{
     //     width: 50px;
@@ -349,6 +379,9 @@ body{
         // margin-left: 2cm;
         // margin-right: 2cm;
         // border-radius: 20px;
+    }
+    .imgct{
+        display: none;
     }
     #tYS h3{
         font-size: medium;
@@ -373,6 +406,7 @@ body{
 
     #form{
         margin-bottom: 40px;
+        margin-left: 12px;
     }
     #nos{
         margin-left: 125px;
@@ -393,12 +427,12 @@ body{
         margin-left: 75px;
         margin-top: 28px;
         img{
-        width: 220px;
-        height: 250px;
+            width: 220px;
+            height: 220px;
+        }
     }
-}
     .Ws{
-        height: 30px;
+        height: 50px;
     }
     #carouselExampleIndicators img{
         width: 100px;
@@ -421,10 +455,10 @@ body{
         top: 484px;
         left: 10%;
     
-    h2{
-        font-size: medium;
+        h2{
+            font-size: medium;
+        }
     }
-}
     #discurso{
         margin-top:2cm ;
 
@@ -443,6 +477,38 @@ body{
     .paleta{
         width: 320px;
         margin: 0;
+        margin-left: 15px;
+    }
+    .completar{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .completarI{
+        padding-right: 140px;
+    }
+    #msg{
+        height: 100px;
+        width: 335px;
+    }
+    #tel, #mail{
+        padding-right: 140px;
+    }
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 130px;
+        margin-top: 32px;
+    }
+    .br{
+        display: none;
+    }
+    #guardar{
+        position:inherit;
+        margin-left:115px;
+    }
+    .prg{
+        width: 180px;
     }
 }
 

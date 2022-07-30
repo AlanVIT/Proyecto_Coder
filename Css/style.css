@@ -25,7 +25,7 @@
 }
 
 #welcome {
-  margin-left: 35%;
+  margin-left: 720px;
   margin-bottom: 5%;
 }
 
@@ -73,14 +73,6 @@ li a:hover {
   border-radius: 10px;
 }
 
-form input {
-  border: 1px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  padding: 10px;
-  transition: 1s;
-}
-
 form input:hover {
   background-color: rgb(218, 218, 218);
 }
@@ -90,12 +82,20 @@ form input:focus{
     position: absolute;
     padding: 100px;
 } */
-.completar {
-  border: none;
+.completar, .completarI {
   background-color: rgba(255, 255, 255, 0);
   padding: 10px;
   transition: 1s;
   cursor: text;
+  margin-bottom: 10px;
+}
+
+.completarI {
+  padding-right: 200px;
+}
+
+#tel, #mail {
+  padding-right: 0;
 }
 
 #saver:hover {
@@ -171,8 +171,9 @@ button.carousel-control-next {
 
 #contForm {
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-around;
+  flex-direction: row;
 }
 
 .info {
@@ -200,9 +201,10 @@ button.carousel-control-next {
 
 #cards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 body {
@@ -219,6 +221,15 @@ body {
 @-webkit-keyframes unEfecto {}
 
 @keyframes unEfecto {}
+.imgct {
+  margin-left: 560px;
+  margin-top: 20px;
+}
+
+.prg {
+  width: 360px;
+}
+
 .Ws {
   height: 60px;
 }
@@ -233,7 +244,6 @@ body {
 
 #welcome img {
   width: 400px;
-  height: 460px;
 }
 
 #indImg {
@@ -246,27 +256,58 @@ body {
 }
 
 #parrafoPrd {
-  margin-left: 120px;
-}
-
-#form {
-  border: #000;
+  margin-left: 400px;
 }
 
 .paleta {
-  margin-left: 20%;
+  margin-left: 770px;
+  width: 330px;
+}
+
+#msg {
+  width: 395px;
+  height: 90px;
+  resize: none;
+}
+
+#guardar {
+  position: absolute;
+  right: 593px;
+  top: 455px;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#carta {
+  width: 27rem;
+}
+
+#carta2 {
+  margin-top: 20px;
+  width: 27rem;
 }
 
 @media screen and (max-width: 430px) {
+  .bodyInd {
+    display: grid;
+    grid-template-rows: 100px 0cm 18cm 135px;
+  }
   body {
     display: grid;
-    grid-template-rows: 100px 0cm 18cm 0;
+    grid-template-rows: 100px 0cm 14.5cm 92px;
+  }
+  #carta {
+    width: 15rem;
+  }
+  #carta2 {
+    width: 15rem;
   }
   .bodyPg {
-    grid-template-rows: 100px 0cm 1200px 250px;
+    grid-template-rows: 100px 0cm 400px 250px;
   }
   .bodyCt {
-    grid-template-rows: 100px 0cm 580px 125px;
+    grid-template-rows: 100px 0cm 660px 125px;
   }
   .bodyPr {
     grid-template-rows: 100px 0cm 105% 0cm;
@@ -275,15 +316,18 @@ body {
     font-size: small !important;
   }
   h2 {
-    font-size: medium !important;
+    font-size: larger !important;
   }
   h1 {
-    font-size: larger !important;
+    font-size: x-large !important;
   }
   .NavHm {
     display: block;
   }
   #head {
+    display: none;
+  }
+  .imgct {
     display: none;
   }
   #tYS h3 {
@@ -307,6 +351,7 @@ body {
   }
   #form {
     margin-bottom: 40px;
+    margin-left: 12px;
   }
   #nos {
     margin-left: 125px;
@@ -329,10 +374,10 @@ body {
   }
   #welcome img {
     width: 220px;
-    height: 250px;
+    height: 220px;
   }
   .Ws {
-    height: 30px;
+    height: 50px;
   }
   #carouselExampleIndicators img {
     width: 100px;
@@ -370,5 +415,37 @@ body {
   .paleta {
     width: 320px;
     margin: 0;
+    margin-left: 15px;
+  }
+  .completar, .completarI {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .completarI {
+    padding-right: 140px;
+  }
+  #msg {
+    height: 100px;
+    width: 335px;
+  }
+  #tel, #mail {
+    padding-right: 140px;
+  }
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 130px;
+    margin-top: 32px;
+  }
+  .br {
+    display: none;
+  }
+  #guardar {
+    position: inherit;
+    margin-left: 115px;
+  }
+  .prg {
+    width: 180px;
   }
 }/*# sourceMappingURL=style.css.map */
