@@ -9,13 +9,15 @@
     <title>Contacto</title>
 </head>
 <body class="bodyCt">
-        <div id="tYS">
-        <h1 id="mrc">DENVER</h1>
-        <h3>Tu buzo tu diseño</h3>
-        </div>
-        <!-- Hamburg -->
-<div class="NavHm">
-    <nav class="navbar bg-light fixed-top">
+  <div id="tYS">
+    <div>
+  <h1 id="mrc">DENVER</h1>
+  <h3>Tu buzo tu diseño</h3>
+  </div>
+  <!-- Hamburg -->
+  <div class="NavHm">
+  
+    <nav class="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -53,9 +55,15 @@
         </div>
       </div>
     </nav>
+  
+  </div>
+  <!-----  ------>
   </div>
   
-  <!--------------->
+  
+  
+  
+  
         <div id="head">
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -78,18 +86,19 @@
       <h3 class="mlytel" >+54 0000-0000</h3>
     </div>
       <div id="form">
-        <form>
+        <form action="https://formsubmit.co/nogeco1926@anlubi.com" method="POST">
             <br>
             <input id="nombre" type="text" name="name" minlength="3" placeholder="Nombre" class="completarI" required>
             <br>
-            <input id="direccion" type="text" name="name" placeholder="Dirección" class="completarI" required>
+            <input id="direccion" type="text" name="direccion" placeholder="Dirección" class="completarI" required>
             <br>
-            <input  id="mail" type="email" name="name" minlength="11" placeholder="Email" class="completarI" required>
-            <input id="tel" type="number" minlength="8" placeholder="Telefono" class="completarI" required>
+            <input  id="mail" type="email" name="mail" minlength="11" placeholder="Email" class="completarI" required>
+            <input id="tel" type="number" name="tel"minlength="8" placeholder="Telefono" class="completarI" required>
             <br>
-            <textarea id="msg" cols="48" placeholder="Escriba su mensaje" class="completar" required ></textarea>
+            <textarea id="msg" name="msg" cols="48" placeholder="Escriba su mensaje" class="completar" required ></textarea>
             <br>
-            <input id="guardar" type="submit" placeholder="Enviar" onclick="guardar()" class="btn btn-primary"></input>
+            <!-- <button type="submit" class="completar">Send</button> -->
+            <button id="guardar" type="submit" placeholder="Enviar" class="btn btn-primary">Enviar</button>
         </form>
       </div>
     </div>
@@ -100,9 +109,9 @@
 <footer class="footer">
     <h3>Redes:</h3>
     <span>
-        <a href="https://www.instagram.com/denver.buzos.y.egresados/" ><img class="Ig" src="assets/pngegg.png"></a>
-        <a href="http://wa.me/5491160429818"><img class="Ws" src="assets/pngwing.com.png"></a> 
-      </span>
+      <a target="_blank" href="https://www.instagram.com/denver.buzos.y.egresados/"><img class="Ig" src="assets/pngegg.png"></a>
+      <a target="_blank" href="http://wa.me/5491160429818"><img class="Ws" src="assets/pngwing.com.png"></a> 
+    </span>
     <a id="help" href="preguntas.html">Ayuda</a>
     <h3 class="h3">Denver@gmail.com</h3>
 

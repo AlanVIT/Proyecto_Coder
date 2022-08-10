@@ -138,7 +138,7 @@ footer a {
   flex-direction: row;
   align-items: center;
   list-style: none;
-  justify-content: space-evenly;
+  justify-content: center;
   /* display: grid;
   grid-template-columns:20% 20% 20% 20% 20%; */
 }
@@ -279,6 +279,15 @@ body {
   padding-left: 20px;
 }
 
+.spc {
+  margin-right: 60px;
+}
+
+.card {
+  width: 250px;
+  height: 305px !important;
+}
+
 #carta {
   width: 27rem;
 }
@@ -288,14 +297,28 @@ body {
   width: 27rem;
 }
 
+.col-md-5:hover {
+  width: 110px;
+  transition: 1s;
+}
+
 @media screen and (max-width: 430px) {
   .bodyInd {
     display: grid;
-    grid-template-rows: 100px 0cm 18cm 135px;
+    grid-template-rows: 100px 18cm 135px;
   }
   body {
     display: grid;
-    grid-template-rows: 100px 0cm 14.5cm 92px;
+    grid-template-rows: 100px 18.5cm 159px;
+  }
+  .bodyPg {
+    grid-template-rows: 100px 400px 250px;
+  }
+  .bodyCt {
+    grid-template-rows: 100px 660px 125px;
+  }
+  .bodyPr {
+    grid-template-rows: 100px 105% 0cm;
   }
   #carta {
     width: 15rem;
@@ -303,14 +326,14 @@ body {
   #carta2 {
     width: 15rem;
   }
-  .bodyPg {
-    grid-template-rows: 100px 0cm 400px 250px;
+  button.navbar-toggler {
+    border-style: none;
   }
-  .bodyCt {
-    grid-template-rows: 100px 0cm 660px 125px;
+  button.navbar-toggler:focus {
+    border-style: none;
   }
-  .bodyPr {
-    grid-template-rows: 100px 0cm 105% 0cm;
+  #tYS h3 {
+    display: none;
   }
   h3 {
     font-size: small !important;
@@ -334,9 +357,10 @@ body {
     font-size: medium;
   }
   #tYS {
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 10px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
   #mrc {
     font-size: large;
@@ -355,6 +379,12 @@ body {
   }
   #nos {
     margin-left: 125px;
+  }
+  .spc {
+    margin: 0;
+  }
+  .card {
+    width: 200px;
   }
   .container {
     display: flex;
@@ -394,7 +424,7 @@ body {
   #infoIndx {
     /* height: 100px; */
     width: 190px;
-    top: 484px;
+    top: 452px;
     left: 10%;
   }
   #infoIndx h2 {
